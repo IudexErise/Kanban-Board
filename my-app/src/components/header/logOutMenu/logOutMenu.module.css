@@ -1,0 +1,15 @@
+.container {
+    width: 134px;
+    height: 60px;
+    background: white;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+}
+
+.menuItem {
+    font-family: 'Roboto';
+    line-height: 16px;
+    color: black;
+    margin: 8px 0 0 8px;
+}

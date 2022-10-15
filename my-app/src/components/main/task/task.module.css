@@ -1,0 +1,16 @@
+.item {
+    width: 256px;
+    background-color: white;
+    color: black;
+    font-family: 'Roboto';
+    font-size: 18px;
+    line-height: 21px;
+    margin: 7px 12px;
+    border: none;
+    border-radius: 5px;
+    padding: 2px;
+}
+
+.text {
+    margin: 7px 9px 6px 8px;
+}

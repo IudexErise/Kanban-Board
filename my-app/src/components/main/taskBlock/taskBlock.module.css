@@ -1,0 +1,65 @@
+.container {
+    width: 282px;
+    background-color: #EBECF0;
+    margin-bottom: 32px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.blockName {
+    font-family: 'Roboto';
+    font-size: 18px;
+    line-height: 21px;
+    color: black;
+    margin: 12px 0 0 12px;
+}
+
+.input {
+    width: 248px;
+    background-color: white;
+    color: black;
+    font-family: 'Roboto';
+    font-size: 18px;
+    line-height: 21px;
+    margin: 15px 12px;
+    border: none;
+    border-radius: 5px;
+    padding: 2px 2px 2px 8px;
+}
+
+.input:focus {
+    outline: none;
+}
+
+.button {
+    color: #5E6C84;
+    background-color: #EBECF0;
+    font-family: 'Roboto';
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    margin: 0 0 8px 12px;
+    cursor: pointer;
+    border-radius: 5px;
+    border: none;
+    width: 102px;
+    height: 29px;
+}
+
+.button:hover {
+    background-color: white;
+}
+
+.plus {
+    margin-right: 3px;
+}
+
+.buttonClicked {
+    background-color: #0079BF;
+    color: white;
+}
+
+.buttonClicked:hover {
+    background-color: #0079BF;
+}

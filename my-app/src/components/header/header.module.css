@@ -1,0 +1,55 @@
+.header {
+    background-color: #0067A3;
+    height: 55px;
+}
+
+.container {
+    max-width: 1235px;
+    display: flex;
+    justify-content: space-between;
+    padding: 7px 20px;
+    align-items: stretch;
+    margin: 0 auto;
+}
+
+.name {
+    color: white;
+    font-family: 'Roboto';
+    font-size: 28px;
+    line-height: 33px;
+}
+
+.login {
+    display: flex;
+    align-items: center;
+    width: 64px;
+    position: relative;
+}
+
+.avatar {
+    background-color: white;
+    border-radius: 50%;
+    margin-right: 6px;
+}
+
+.button {
+    cursor: pointer;
+}
+
+.login {
+    font-family: 'Roboto';
+    color: white;
+    cursor: pointer;
+}
+
+.linker {
+    position: absolute;
+    top: 40px;
+    left: 12px;
+}
+
+.logOutMenu {
+    position: absolute;
+    top: 46px;
+    right: 12px;
+}

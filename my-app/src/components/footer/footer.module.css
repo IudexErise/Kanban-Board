@@ -1,0 +1,23 @@
+.footer {
+    background-color: #0067A3;
+    height: 55px;
+}
+
+.container {
+    max-width: 1235px;
+    display: flex;
+    justify-content: space-between;
+    padding: 7px 20px;
+    align-items: center;
+    margin: 0 auto;
+    color: white;
+    font-family: 'Roboto';
+    font-size: 18px;
+    line-height: 21px;
+}
+
+.tasks {
+    width: 300px;
+    display: flex;
+    justify-content: space-between;
+}
