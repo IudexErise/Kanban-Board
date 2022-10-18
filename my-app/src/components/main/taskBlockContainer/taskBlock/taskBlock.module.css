@@ -12,7 +12,7 @@
     font-size: 18px;
     line-height: 21px;
     color: black;
-    margin: 12px 0 0 12px;
+    margin: 12px 0 15px 12px;
 }
 
 .input {
@@ -22,7 +22,7 @@
     font-family: 'Roboto';
     font-size: 18px;
     line-height: 21px;
-    margin: 15px 12px;
+    margin: 0 12px 7px;
     border: none;
     border-radius: 5px;
     padding: 2px 2px 2px 8px;

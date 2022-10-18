@@ -1,33 +1,17 @@
 import React from "react";
+import { Routes, Route } from "react-router-dom";
 import css from './main.module.css';
-import TaskBlock from './taskBlock';
+import TaskExtended from './taskBlockContainer/taskBlock/task/taskExtended';
+import TaskBlockContainer from './taskBlockContainer';
 
-let state = {
-    backlog: [
-        {
-            id: 1,
-            headline: 'task1',
-            description: 'description1'
-        },
-        {
-            id: 2,
-            headline: 'task2',
-            description: 'description2'
-        }
-    ],
-    ready: [],
-    inProgress: [],
-    finished: []
-}
-
-export default function Main() {
-
-     return (
-        <div className={css.container}>
-            <TaskBlock blockName='Backlog' tasksData={state.backlog} moveToList={state.ready}/>
-            <TaskBlock blockName='Ready' tasksData={state.ready} moveToList={state.inProgress}/>
-            <TaskBlock blockName='In Progress' tasksData={state.inProgress} moveToList={state.finished}/>
-            <TaskBlock blockName='Finished' tasksData={state.finished}/>
-        </div>
+export default function Main(props) {
+    const {tasksToDo, setTasksToDo} = props;
+    return (
+        <main>
+            <Routes>
+                <Route exact path={'/'} element={<TaskBlockContainer tasksToDo={tasksToDo} setTasksToDo={setTasksToDo}/>} />
+                <Route path={'/tasks/:id'} element={<TaskExtended tasksToDo={tasksToDo} setTasksToDo={setTasksToDo}/>} />
+            </Routes>
+        </main>
     )
 }

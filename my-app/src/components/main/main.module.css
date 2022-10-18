@@ -1,7 +1,0 @@
-.container {
-    display: flex;
-    flex-wrap: wrap;
-    margin: 20px auto 0 auto;
-    max-width: 1235px;
-    justify-content: space-around;
-}

@@ -1,0 +1,48 @@
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+.topContent {
+    display: flex;
+    justify-content: space-between;
+    margin: 22px 28px 35px 28px;
+    align-items: center;
+}
+
+.content {
+    max-width: 1181px;
+    background-color: white;
+    color: black;
+    margin: 21px 27px;
+}
+
+.button {
+    width: 25px;
+    height: 24px;
+    background: url(./cross.svg);
+    cursor: pointer;
+    border: none;
+}
+
+.headline {
+    font-family: 'Roboto';
+    font-size: 24px;
+    line-height: 28px;
+    margin: 0;
+}
+
+.description {
+    font-family: 'Roboto';
+    font-size: 18px;
+    line-height: 21px;
+    margin: 0 28px 30px 28px;
+    max-width: 65%;
+    border: none;
+    resize: none;
+}
+
+.description:focus {
+    outline: none;
+}
+

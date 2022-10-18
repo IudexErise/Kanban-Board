@@ -1,3 +1,7 @@
+.container a {
+    text-decoration: none;
+}
+
 .item {
     width: 256px;
     background-color: white;
@@ -5,7 +9,7 @@
     font-family: 'Roboto';
     font-size: 18px;
     line-height: 21px;
-    margin: 7px 12px;
+    margin: 0 12px 7px;
     border: none;
     border-radius: 5px;
     padding: 2px;

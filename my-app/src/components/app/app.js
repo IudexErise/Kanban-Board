@@ -1,17 +1,26 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import Header from '../header'
 import Main from '../main'
 import Footer from '../footer'
 import css from './app.module.css';
-import mock from '../../server-response-mock'
+import { BrowserRouter } from 'react-router-dom';
 
 function App() {
-    const isLogged = mock.activeUserId != null;
+
+    let tasks = JSON.parse(window.localStorage.getItem('tasksToDo'))
+    tasks = tasks ? tasks : []
+    const [tasksToDo, setTasksToDo] = useState(tasks)
+    useEffect(() => {
+        window.localStorage.setItem('tasksToDo', JSON.stringify(tasksToDo))
+    })
+
     return (
         <div className={css.app}>
-            <Header isLogged={isLogged}/>
-            <Main />
-            <Footer />
+            <BrowserRouter>
+                <Header />
+                <Main tasksToDo={tasksToDo} setTasksToDo={setTasksToDo} />
+                <Footer tasksToDo={tasksToDo} />
+            </BrowserRouter>
         </div>
     );
 }

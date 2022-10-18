@@ -3,6 +3,10 @@
     height: 55px;
 }
 
+.header a {
+    text-decoration: none;
+}
+
 .container {
     max-width: 1235px;
     display: flex;
