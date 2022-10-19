@@ -13,7 +13,7 @@ export default function Header() {
         <header className={css.header}>
             <div className={css.container}>
                 <Link to="/" >
-                    <span className={css.name}>Awesome Kanban Board</span>
+                    <span className={css.logo}>Awesome Kanban Board</span>
                 </Link>
                 <div className={css.login} onClick={() => showMenu(!isClicked)} >
                     <img src={avatar} className={css.avatar} alt="" />

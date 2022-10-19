@@ -1,6 +1,10 @@
 .footer {
     background-color: #0067A3;
     height: 55px;
+    position:fixed;
+    left:0px;
+    bottom:0px;
+    width:100%;
 }
 
 .container {
@@ -20,4 +24,10 @@
     width: 300px;
     display: flex;
     justify-content: space-between;
+}
+
+@media screen and (max-width: 600px) {
+    .footer {
+        display: none;
+    }
 }

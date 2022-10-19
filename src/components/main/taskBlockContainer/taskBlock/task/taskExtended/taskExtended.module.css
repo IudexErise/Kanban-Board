@@ -1,6 +1,7 @@
 .container {
     display: flex;
     justify-content: center;
+    height: 80vh;
 }
 
 .topContent {
@@ -15,6 +16,8 @@
     background-color: white;
     color: black;
     margin: 21px 27px;
+    border-radius: 5px;
+    width: 100%;
 }
 
 .button {
@@ -37,9 +40,10 @@
     font-size: 18px;
     line-height: 21px;
     margin: 0 28px 30px 28px;
-    max-width: 65%;
+    width: 65%;
     border: none;
     resize: none;
+    height: 80%;
 }
 
 .description:focus {

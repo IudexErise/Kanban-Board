@@ -24,13 +24,12 @@ export default function TaskBlock(props) {
             setTasksToDo([...tasksToDo, task]);
             setNewTask('');
             setTask(!clickedButton);
-            console.log(tasksToDo)
         }
     }
 
     const tasksList = tasksToDo.map((task) => {
         return (
-            <Task headline={task.headline} id={task.id} description={task.description} key={task.id} />
+            <Task headline={task.headline} id={task.id} key={task.id} />
         )
     })
 

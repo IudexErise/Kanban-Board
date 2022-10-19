@@ -16,7 +16,7 @@
     margin: 0 auto;
 }
 
-.name {
+.logo {
     color: white;
     font-family: 'Roboto';
     font-size: 28px;
@@ -56,4 +56,10 @@
     position: absolute;
     top: 46px;
     right: 12px;
+}
+
+@media screen and (max-width: 350px) {
+    .logo {
+        display: none;
+    }
 }

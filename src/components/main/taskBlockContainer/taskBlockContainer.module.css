@@ -5,3 +5,9 @@
     max-width: 1235px;
     justify-content: space-around;
 }
+
+@media screen and (min-width: 600px) {
+    .container {
+        margin: 20px auto 40px auto;
+    }
+}
