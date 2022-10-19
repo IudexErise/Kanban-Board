@@ -63,3 +63,25 @@
 .buttonClicked:hover {
     background-color: #0079BF;
 }
+
+.select {
+    width: 256px;
+    background-color: white;
+    color: black;
+    font-family: 'Roboto';
+    font-size: 18px;
+    line-height: 21px;
+    margin: 0 12px 7px;
+    border: none;
+    border-radius: 5px;
+    padding: 2px 2px 2px 8px;
+}
+
+.select:focus {
+    outline: none;
+}
+
+.option:hover {
+    background-color: #DEDEDE;
+    cursor: pointer;
+}

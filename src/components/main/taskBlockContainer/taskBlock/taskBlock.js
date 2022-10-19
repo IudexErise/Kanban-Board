@@ -5,7 +5,7 @@ import { nanoid } from 'nanoid'
 import Task from "./task";
 
 export default function TaskBlock(props) {
-    const { tasksToDo, setTasksToDo } = props;
+    const { tasksToDo, setTasksToDo, blockName } = props;
     const [clickedButton, setTask] = useState(false);
     const [newTask, setNewTask] = useState('');
 
@@ -33,8 +33,14 @@ export default function TaskBlock(props) {
         )
     })
 
-    
-    if (props.blockName === 'Backlog') {
+    const optionsList = tasksToDo.map((task) => {
+        return (
+            <option className={css.option}>{task.headline}</option>            
+        )
+    })
+
+       
+    if (blockName === 'Backlog') {
         return (
             <div className={css.container}>
                 <span className={css.blockName}>{props.blockName}</span>
@@ -69,10 +75,9 @@ export default function TaskBlock(props) {
         return (
             <div className={css.container}>
                 <span className={css.blockName}>{props.blockName}</span>
-
                 {clickedButton &&
-                    <select>
-
+                    <select className={css.select}>
+                        {optionsList}
                     </select>}
                 {!clickedButton ?
                     <button
