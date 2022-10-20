@@ -3,7 +3,7 @@ import css from './taskExtended.module.css';
 import { useLocation, Link } from 'react-router-dom';
 
 
-export default function TaskExtended(props) {
+export default function TaskExtended() {
     const location = useLocation();
     const { id } = location.state;
 
@@ -19,7 +19,7 @@ export default function TaskExtended(props) {
             }
             return updTask;
         })
-        window.localStorage.setItem('tasksToDo', JSON.stringify(newTasksList))
+        window.localStorage.setItem('tasksToDo', JSON.stringify(newTasksList));
     }
     
     return (
@@ -33,7 +33,7 @@ export default function TaskExtended(props) {
                 </div>                
                 <textarea 
                     className={css.description} 
-                    placeholder='Your task description...'
+                    placeholder='This task has no description.'
                     value={newDescription}
                     onChange={event => setNewDescription(event.target.value)}
                     onBlur={() => handleChange()}

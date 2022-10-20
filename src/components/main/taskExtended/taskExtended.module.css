@@ -43,10 +43,31 @@
     width: 65%;
     border: none;
     resize: none;
-    height: 80%;
+    max-height: 80%;
 }
 
 .description:focus {
     outline: none;
 }
 
+@media screen and (max-width: 600px) {
+    .topContent {
+        display: flex;
+        justify-content: space-between;
+        margin: 5px;
+        align-items: center;
+    }
+
+    .container {
+        height: 100vh;
+    }
+
+    .topContent {
+        margin: 5px;
+    }
+
+    .description {
+        margin: 5px;
+        max-height: 80vh;
+    }
+}

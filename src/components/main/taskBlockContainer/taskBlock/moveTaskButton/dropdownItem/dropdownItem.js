@@ -16,6 +16,7 @@ export default function DropdownItem(props) {
         })
         window.localStorage.setItem('tasksToDo', JSON.stringify(newTasksList));
         handleClickedDropdown(!clickedButton);
+        window.location.reload(true);
     }
 
     return (

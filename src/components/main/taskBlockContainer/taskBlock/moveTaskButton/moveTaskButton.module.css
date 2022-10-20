@@ -13,6 +13,20 @@
     height: 29px;
 }
 
+.buttonDisabled {
+    color: #5E6C84;
+    background-color: #EBECF0;
+    font-family: 'Roboto';
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    margin: 0 0 8px 12px;
+    border-radius: 5px;
+    border: none;
+    width: 102px;
+    height: 29px;
+}
+
 .button:hover {
     background-color: white;
 }

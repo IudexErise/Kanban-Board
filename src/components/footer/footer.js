@@ -2,8 +2,10 @@ import css from './footer.module.css';
 
 export default function Footer(props) {
     const {tasksToDo} = props;
-    const activeTasks = tasksToDo.filter(task => (task.status == 0 || 1 || 2));
+    const activeTasks = tasksToDo.filter(task => (task.status < 3));
     const finishedTasks = tasksToDo.filter(task => (task.status == 3));
+
+    console.log(activeTasks)
 
     return (
         <footer className={css.footer}>

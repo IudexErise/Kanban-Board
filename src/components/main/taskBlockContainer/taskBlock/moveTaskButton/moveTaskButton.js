@@ -20,18 +20,22 @@ export default function MoveTaskButton(props) {
                 handleClickedDropdown={handleClickedDropdown}
             />
         )
-    })
-
-    function checkEmpty (){
-        if (tasksToMoveList.length > 0) {
-            return false
-        } else {
-            return true
-        }
-    }
+    })    
 
     return (
-        <>
+        <>           
+            {!clickedButton &&
+                <button
+                    className={tasksToMoveList.length > 0 ? css.button : css.buttonDisabled}
+                    onClick={tasksToMoveList.length > 0 ? () => handleClickedButton(!clickedButton) : null}
+                >
+                    <img
+                        src={plus}
+                        className={css.plus}
+                        alt=''
+                    />Add card
+                </button>
+            }
             {clickedButton &&
                 <div className={css.dropdownContainer}>
                     <button
@@ -45,18 +49,6 @@ export default function MoveTaskButton(props) {
                             {tasksToMoveList}
                         </div>}
                 </div>
-            }
-            {!clickedButton &&
-                <button
-                    className={css.button}
-                    onClick={() => handleClickedButton(!clickedButton)}
-                >
-                    <img
-                        src={plus}
-                        className={css.plus}
-                        alt=''
-                    />Add card
-                </button>
             }
         </>
     )
