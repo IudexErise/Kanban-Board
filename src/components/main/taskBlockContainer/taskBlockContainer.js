@@ -6,10 +6,10 @@ export default function TaskBlockContainer(props) {
     const {tasksToDo, setTasksToDo} = props;
     return (
         <div className={css.container}>
-            <TaskBlock blockName='Backlog' tasksToDo={tasksToDo} setTasksToDo={setTasksToDo} />
-            <TaskBlock blockName='Ready' tasksToDo={tasksToDo} setTasksToDo={setTasksToDo} />
-            <TaskBlock blockName='In Progress' tasksToDo={tasksToDo} setTasksToDo={setTasksToDo} />
-            <TaskBlock blockName='Finished' tasksToDo={tasksToDo} setTasksToDo={setTasksToDo} />
+            <TaskBlock blockName='Backlog' blockStatus='0' tasksToDo={tasksToDo} setTasksToDo={setTasksToDo} />
+            <TaskBlock blockName='Ready' blockStatus='1' tasksToDo={tasksToDo} setTasksToDo={setTasksToDo} />
+            <TaskBlock blockName='In Progress' blockStatus='2' tasksToDo={tasksToDo} setTasksToDo={setTasksToDo} />
+            <TaskBlock blockName='Finished' blockStatus='3' tasksToDo={tasksToDo} setTasksToDo={setTasksToDo} />
         </div>
     )
 }

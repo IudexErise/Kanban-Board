@@ -1,0 +1,83 @@
+.button {
+    color: #5E6C84;
+    background-color: #EBECF0;
+    font-family: 'Roboto';
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    margin: 0 0 8px 12px;
+    cursor: pointer;
+    border-radius: 5px;
+    border: none;
+    width: 102px;
+    height: 29px;
+}
+
+.button:hover {
+    background-color: white;
+}
+
+.plus {
+    margin-right: 3px;
+}
+
+.select {
+    width: 256px;
+    background-color: white;
+    color: black;
+    font-family: 'Roboto';
+    font-size: 18px;
+    line-height: 21px;
+    margin: 0 12px 7px;
+    border: none;
+    border-radius: 5px;
+    padding: 2px 2px 2px 8px;
+}
+
+.select:focus {
+    outline: none;
+}
+
+.option:hover {
+    background-color: #DEDEDE;
+    cursor: pointer;
+}
+
+.dropdownContainer {
+    display: flex;
+    flex-direction: column;
+    margin: 0px auto 8px;
+}
+
+.dropdownToggle {
+    width: 258px;
+    height: 35px;
+    background-color: white;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+
+.dropdownArrow {
+    margin-right: 10px;
+}
+
+.tasksToMoveList {
+    background-color: white;
+    margin-top: 3px;
+    width: 258px;
+    border-radius: 5px;
+}
+
+.dropdownItem {
+    width: 244px;
+    padding: 7px;
+}
+
+.dropdownItem:hover {
+    cursor: pointer;
+    background-color: #DEDEDE;
+}

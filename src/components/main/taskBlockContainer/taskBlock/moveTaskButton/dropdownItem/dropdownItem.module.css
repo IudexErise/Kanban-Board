@@ -1,0 +1,9 @@
+.dropdownItem {
+    width: 244px;
+    padding: 7px;
+}
+
+.dropdownItem:hover {
+    cursor: pointer;
+    background-color: #DEDEDE;
+}

@@ -4,6 +4,7 @@
 
 .item {
     width: 256px;
+    min-height: 35px;
     background-color: white;
     color: black;
     font-family: 'Roboto';
@@ -13,6 +14,8 @@
     border: none;
     border-radius: 5px;
     padding: 2px;
+    align-items: center;
+    display: flex;
 }
 
 .text {

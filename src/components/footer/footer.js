@@ -1,12 +1,16 @@
 import css from './footer.module.css';
 
 export default function Footer(props) {
+    const {tasksToDo} = props;
+    const activeTasks = tasksToDo.filter(task => (task.status == 0 || 1 || 2));
+    const finishedTasks = tasksToDo.filter(task => (task.status == 3));
+
     return (
         <footer className={css.footer}>
             <div className={css.container}>
                 <div className={css.tasks}>
-                    <span>Active tasks: {props.tasksToDo.length}</span>
-                    <span>Finished tasks: 0</span>
+                    <span>Active tasks: {activeTasks.length}</span>
+                    <span>Finished tasks: {finishedTasks.length}</span>
                 </div>
                 <div className={css.name}>Kanban board by V.Saprykin 2022</div>
             </div>
